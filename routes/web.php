@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,28 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 })->name('homepage');
+
+Route::get('/vxproject-presentacion', function() {
+    return view('pages.vxproject-presentacion');
+})->name('vxproject-presentacion.show');
+
+Route::get('/area-de-descargas', function() {
+    return view('pages.descargas');
+})->name('area-descargas.show');
+
+Route::get('/blog', function() {
+    $posts = Post::all();
+
+    return view('pages.blog', compact('posts'));
+})->name('blog.show');
+
+Route::get('/articulos/{post}', function(Post $post) {
+    return view('pages.post', compact('post'));
+})->name('post.show');
+
+Route::get('/contacto', function() {
+    return view('pages.contacto');
+})->name('contacto.show');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

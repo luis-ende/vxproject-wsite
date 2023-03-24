@@ -14,9 +14,11 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+         \App\Models\User::factory()->create([
+             'name' => 'vxproject-admin',
+             'email' => 'test@vxproject.com.mx',
+         ]);
+
+         $this->call(PostSeeder::class);
     }
 }
