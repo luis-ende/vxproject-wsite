@@ -14,6 +14,6 @@
         </a>
     </div>
 </div>
-<div class="bg-fuchsia-900 font-bold text-base text-white h-5 text-center">
-    <span>&#169; {{ date("Y") }} VX Project</span>
+<div class="bg-white font-bold text-base text-gray-800 h-5 text-center font-montserrat">
+    <span>&#169; 2019 - {{ date("Y") }} VX Project</span>
 </div>

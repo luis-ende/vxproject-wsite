@@ -23,7 +23,7 @@
                     </x-nav-link>
                 </li>
                 <li>
-                    <x-nav-link :href="route('homepage')" :active="request()->routeIs('servicios')">
+                    <x-nav-link :href="route('servicios.show')" :active="request()->routeIs('servicios.show')">
                         Servicios
                     </x-nav-link>
                 </li>

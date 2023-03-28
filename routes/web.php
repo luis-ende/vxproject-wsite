@@ -37,6 +37,10 @@ Route::get('/articulos/{post}', function(Post $post) {
     return view('pages.post', compact('post'));
 })->name('post.show');
 
+Route::get('/servicios-ingenieria-estructural', function() {
+    return view('pages.servicios');
+})->name('servicios.show');
+
 Route::get('/contacto', function() {
     return view('pages.contacto');
 })->name('contacto.show');

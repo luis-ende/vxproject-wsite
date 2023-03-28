@@ -17,9 +17,10 @@
     <body class="font-sans bg-white antialiased">
         <header>
             @include('layouts.navigation-guest')
+            @yield('page_header')
         </header>
 
-        <main class="mt-32">
+        <main>
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <!-- Page Content -->
                 {{ $slot }}

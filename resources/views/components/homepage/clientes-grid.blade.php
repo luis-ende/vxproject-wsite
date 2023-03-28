@@ -17,50 +17,22 @@
             nombre="Altán Redes"
             actividad="telecomunicaciones"
     />
-
     <x-homepage.cliente-tarjeta
-            src="{{ asset('images/clientes_logos/emcifcliente.jpg') }}"
-            alt="Logo EMCIF"
-            titulo="EMCIF"
-            nombre="EMCIF"
-            actividad="torrero"
+            src="{{ asset('images/clientes_logos/CFE.jpg') }}"
+            alt="Logo CFE"
+            nombre="CFE"
+            actividad="telecomunicaciones"
     />
     <x-homepage.cliente-tarjeta
-            src="{{ asset('images/clientes_logos/matesacliente.jpg') }}"
-            alt="Logo Matesa"
-            nombre="MATESA"
-            actividad="torrero"
-    />
-    <x-homepage.cliente-tarjeta
-            src="{{ asset('images/clientes_logos/WESHLERCLIENTE.jpg') }}"
-            alt="Logo Weshler"
-            nombre="WESHLER"
-            actividad="torrero - mantenimiento"
-    />
-
-    <x-homepage.cliente-tarjeta
-            src="{{ asset('images/clientes_logos/gnmcliente.jpg') }}"
-            alt="Logo GNM"
-            nombre="GNM"
-            actividad="llave en mano"
-    />
-    <x-homepage.cliente-tarjeta
-            src="{{ asset('images/clientes_logos/TCI-A.jpg') }}"
-            alt="Logo TCI"
-            nombre="TCI"
-            actividad="torrero"
+            src="{{ asset('images/clientes_logos/CENTERCLIENTE.jpg') }}"
+            alt="Logo Centerline"
+            nombre="CENTERLINE"
+            actividad="telecomunicaciones"
     />
     <x-homepage.cliente-tarjeta
             src="{{ asset('images/clientes_logos/MTPCLIENTE.jpg') }}"
             alt="Logo MTP"
             nombre="MTP"
-            actividad="telecomunicaciones"
-    />
-
-    <x-homepage.cliente-tarjeta
-            src="{{ asset('images/clientes_logos/CENTERCLIENTE.jpg') }}"
-            alt="Logo Centerline"
-            nombre="CENTERLINE"
             actividad="telecomunicaciones"
     />
     <x-homepage.cliente-tarjeta
@@ -70,9 +42,34 @@
             actividad="telecomunicaciones"
     />
     <x-homepage.cliente-tarjeta
-            src="{{ asset('images/clientes_logos/CFE.jpg') }}"
-            alt="Logo CFE"
-            nombre="CFE"
-            actividad="telecomunicaciones"
+            src="{{ asset('images/clientes_logos/WESHLERCLIENTE.jpg') }}"
+            alt="Logo Weshler"
+            nombre="WESHLER"
+            actividad="torrero - mantenimiento"
+    />
+    <x-homepage.cliente-tarjeta
+            src="{{ asset('images/clientes_logos/matesacliente.jpg') }}"
+            alt="Logo Matesa"
+            nombre="MATESA"
+            actividad="torrero"
+    />
+    <x-homepage.cliente-tarjeta
+            src="{{ asset('images/clientes_logos/TCI-A.jpg') }}"
+            alt="Logo TCI"
+            nombre="TCI"
+            actividad="torrero"
+    />
+    <x-homepage.cliente-tarjeta
+            src="{{ asset('images/clientes_logos/emcifcliente.jpg') }}"
+            alt="Logo EMCIF"
+            titulo="EMCIF"
+            nombre="EMCIF"
+            actividad="torrero"
+    />
+    <x-homepage.cliente-tarjeta
+            src="{{ asset('images/clientes_logos/gnmcliente.jpg') }}"
+            alt="Logo GNM"
+            nombre="GNM"
+            actividad="llave en mano"
     />
 </div>
