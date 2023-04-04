@@ -1,25 +1,12 @@
 @props(['post' => null])
 
-<article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-    <div class="flex justify-between items-center mb-5 text-gray-500">
-                            <span class="bg-violet-100 text-vxproject-primary text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
-                                <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>
-                                Artículo
-                            </span>
-        <span class="text-sm">Hace 14 días</span>
-    </div>
-    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">{{ $post->title }}</a></h2>
-    <p class="mb-5 font-light text-gray-500 dark:text-gray-400">{{ $post->resumen }}</p>
-    <div class="flex justify-between items-center">
-        <div class="flex items-center space-x-4">
-            <img class="w-7 h-7 rounded-full" src="{{ asset('images/si-editorconfig.svg') }}" alt="Jese Leos avatar" />
-            <span class="font-medium dark:text-white">
-                          VX Project
-                      </span>
-        </div>
-        <a href="{{ route('post.show', [$post->id]) }}" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
-            Leer más
-            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </a>
-    </div>
+<article class="p-3 bg-white rounded border border-vxproject-primary dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+    <img src="{{ $post->getFirstMedia('images')->original_url }}"
+         alt="{{ $post->title }}"
+         class="my-5">
+    <h3 class="text-vxproject-secondary text-xl uppercase h-20">
+        {{ $post->title }}
+    </h3>
+    <p class="h-40 text-xl">{{ $post->resumen }}</p>
+    <button type="button" class="vxproject-button-primary self-end my-2">Leer más</button>
 </article>

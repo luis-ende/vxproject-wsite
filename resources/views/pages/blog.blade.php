@@ -1,20 +1,25 @@
 <x-guest-layout>
-    @section('page_title', 'Área de descargas')
-    <div class="bg-white overflow-hidden min-h-screen mt-10">
-        <div class="px-10 md:px-0 flex flex-col items-center">
-            <section class="bg-white dark:bg-gray-900">
-                <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Artículos</h2>
-                    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Consulta nuestros artículos con información útil sobre dibujo.</p>
+    @section('page_title', 'Artículos')
+    @section('page_header')
+        <div class="w-full max-h-[660px] md:h-[660px] h-96 bg-cover bg-top mt-16" style="background-image: url('{{ asset('images/articulos.jpg') }}')">
+            <div class="w-full h-full flex backdrop-brightness-50 flex flex-col justify-end">
+                <div class="mx-auto w-1/3 flex justify-start">
+                    <span class="text-white text-5xl pb-10">Artículos</span>
                 </div>
-            </section>
+            </div>
+        </div>
+    @endsection
+    <div class="bg-white overflow-hidden min-h-screen mt-10">
+        <h2 class="my-10 text-5xl tracking-tight font-montserrat text-vxproject-secondary dark:text-white">Tutoriales</h2>
+        <div class="px-10 md:px-0 flex flex-col items-center">
             <section>
-                <div class="grid gap-8 lg:grid-cols-2">
+                <div class="grid gap-10 lg:grid-cols-3">
                     @foreach($posts as $post)
                         <x-blog.articulo-card :post="$post" />
                     @endforeach
                 </div>
             </section>
         </div>
+        <h2 class="my-10 text-5xl tracking-tight font-montserrat text-vxproject-secondary dark:text-white">Lo nuevo</h2>
     </div>
 </x-guest-layout>
