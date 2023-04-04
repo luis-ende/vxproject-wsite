@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('resumen');
             $table->string('post_template');
+            $table->string('slug');
             $table->foreignId('user_id')->constrained();
             $table->timestamps();
         });

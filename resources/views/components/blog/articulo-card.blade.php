@@ -8,5 +8,5 @@
         {{ $post->title }}
     </h3>
     <p class="h-40 text-xl">{{ $post->resumen }}</p>
-    <button type="button" class="vxproject-button-primary self-end my-2">Leer más</button>
+    <a href="{{ route('blog.article.show', [$post->slug]) }}" class="vxproject-button-primary self-end my-2">Leer más</a>
 </article>
