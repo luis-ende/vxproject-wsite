@@ -43,6 +43,6 @@ En los siguientes pasos te mostraremos como hacer funcionar los comandos de Auto
 
 En el siguiente video se muestra este procedimiento y ejemplos del uso de la Polyline.
 
-<iframe loading="lazy" id="embed_video" class="" width="100%" height="650px" src="//www.youtube.com/embed/Mjtm6ErlAW8?&amp;autoplay=0&amp;mute=0&amp;loop=0&amp;playlist=Mjtm6ErlAW8" frameborder="0"></iframe>
+<iframe loading="lazy" id="embed_video" class="" width="75%" height="450px" src="//www.youtube.com/embed/Mjtm6ErlAW8?&amp;autoplay=0&amp;mute=0&amp;loop=0&amp;playlist=Mjtm6ErlAW8" frameborder="0"></iframe>
 
-Si deseas descargar los archivos usados en este video, por favor ve al artículo de [descargas](https://vxproject) que te permitirá descargar este material. Ayúdanos compartiendo o dejándonos un comentario sobre lo que te ha parecido esta macro.
+Si deseas descargar los archivos usados en este video, por favor ve al artículo de [descargas](/area-de-descargas) que te permitirá descargar este material. Ayúdanos compartiendo o dejándonos un comentario sobre lo que te ha parecido esta macro.

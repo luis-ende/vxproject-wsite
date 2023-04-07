@@ -1,4 +1,4 @@
-En esta ocasión les mostraremos como dibujar círculos a través de una macro en Excel. Para ello debes tener listo tu libro de Excel con el código para definir el punto base en AutoCAD donde quieres que la macro se ejecute. Si no lo recuerdas o no sabes cómo hacerlo ve al artículo *[Macro para iniciar un dibujo en AutoCAD](https://vxproject.com.mx)*.
+En esta ocasión les mostraremos como dibujar círculos a través de una macro en Excel. Para ello debes tener listo tu libro de Excel con el código para definir el punto base en AutoCAD donde quieres que la macro se ejecute. Si no lo recuerdas o no sabes cómo hacerlo ve al artículo **[Macro para iniciar un dibujo en AutoCAD](/blog/macro-para-iniciar-un-dibujo-en-autocad)**.
 
 ---
 
@@ -94,6 +94,6 @@ CIRREF(0) = x + **Range("I2").Value**{style="color: #4bacc6"} * **i**{style="col
 
 En el siguiente video se muestra este procedimiento.
 
-<iframe loading="lazy" id="embed_video" class="pagelayer-video-iframe" width="100%" height="650px" src="//www.youtube.com/embed/7TAEp988AcE?&amp;autoplay=0&amp;mute=0&amp;loop=0&amp;playlist=7TAEp988AcE" frameborder="0"></iframe>
+<iframe loading="lazy" id="embed_video" class="pagelayer-video-iframe" width="75%" height="450px" src="//www.youtube.com/embed/7TAEp988AcE?&amp;autoplay=0&amp;mute=0&amp;loop=0&amp;playlist=7TAEp988AcE" frameborder="0"></iframe>
 
-Si deseas descargar los archivos usados en este video, por favor ve al artículo de [descargas](https://vxproject) que te permitirá descargar este material. Ayúdanos compartiendo o dejándonos un comentario sobre lo que te ha parecido esta macro.
+Si deseas descargar los archivos usados en este video, por favor ve al artículo de [descargas](/area-de-descargas) que te permitirá descargar este material. Ayúdanos compartiendo o dejándonos un comentario sobre lo que te ha parecido esta macro.

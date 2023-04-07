@@ -1,4 +1,4 @@
-Veremos como colocar uno o varios HATCH en nuestros proyectos de AutoCAD a través de EXCEL con la ayuda de macros. Si no lo recuerdas o no sabes cómo hacerlo ve al artículo **[Macro para iniciar un dibujo en AutoCAD](https://vxproject.com.mx)**.
+Veremos como colocar uno o varios HATCH en nuestros proyectos de AutoCAD a través de EXCEL con la ayuda de macros. Si no lo recuerdas o no sabes cómo hacerlo ve al artículo **[Macro para iniciar un dibujo en AutoCAD](/blog/macro-para-iniciar-un-dibujo-en-autocad)**.
 
 1. Abre Excel y ten preparado el editor de Visual Basic.
 2. La función que permite AutoCAD para realizar esto es la siguiente:
@@ -11,7 +11,7 @@ Veremos como colocar uno o varios HATCH en nuestros proyectos de AutoCAD a trav�
     {.blog-post-code}
     **Dim**{style="color: #4bacc6"} CREF(0 to 0) **As AcadEntity**{style="color: #4bacc6"} 
    
-    > Para poder explicar esto necesitamos crear una figura que va a contener el HACTH. En este ejemplo usaremos un círculo. Si no recuerdas como hacer un círculo en AutoCAD a través de macros, puedes primero leer el artículo: **[Macro Excel para dibujar en AutoCAD - Círculos](https://vxproject.com.mx)**
+    > Para poder explicar esto necesitamos crear una figura que va a contener el HACTH. En este ejemplo usaremos un círculo. Si no recuerdas como hacer un círculo en AutoCAD a través de macros, puedes primero leer el artículo: **[Macro Excel para dibujar en AutoCAD - Círculos](/blog/macro-excel-para-dibujar-en-autocad-circulos)**
 
 4. *PatternType As Long*. En AutoCAD debemos conocer que tipo de Pattern vamos a usar, si estos serán los predefinidos por el programa o unos creados por el usuario. Cuando son los predefinidos del programa, tenemos dos opciones de colocar este parámetro: **1** o **acHatchPatternTypePreDefined**.
 
@@ -59,6 +59,6 @@ Recuerda que puedes referenciar todos los valores de los parámetros a las celda
 
 En el siguiente video podrás encontrar este procedimiento y un ejemplo con una polilinea en forma de rectángulo.
 
-<iframe loading="lazy" id="embed_video" class="pagelayer-video-iframe" width="100%" height="650px" src="//www.youtube.com/embed/Q-Ut-hyptE0?&amp;autoplay=0&amp;mute=0&amp;loop=0&amp;playlist=Q-Ut-hyptE0" frameborder="0"></iframe>
+<iframe loading="lazy" id="embed_video" class="pagelayer-video-iframe" width="75%" height="450px" src="//www.youtube.com/embed/Q-Ut-hyptE0?&amp;autoplay=0&amp;mute=0&amp;loop=0&amp;playlist=Q-Ut-hyptE0" frameborder="0"></iframe>
 
-Si deseas descargar los archivos usados en este video, por favor ve al artículo de [descargas](https://vxproject) que te permitirá descargar este material. Ayúdanos compartiendo o dejándonos un comentario sobre lo que te ha parecido esta macro.
+Si deseas descargar los archivos usados en este video, por favor ve al artículo de [descargas](/area-de-descargas) que te permitirá descargar este material. Ayúdanos compartiendo o dejándonos un comentario sobre lo que te ha parecido esta macro.

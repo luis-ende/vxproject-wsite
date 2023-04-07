@@ -8,7 +8,7 @@
             padding: 5px 5px 5px 5px;
         }
     }
-    a:link {
+    a {
         color: #9900ff;
     }
     a:hover {
@@ -22,6 +22,9 @@
     }
     img {
         width: 75%;
+        margin: 0 auto;
+    }
+    iframe {
         margin: 0 auto;
     }
 }

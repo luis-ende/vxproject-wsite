@@ -1,4 +1,4 @@
-Crear una macro para insertar, girar y escalar un bloque ya previamente creado en su espacio de trabajo de AutoCAD es bastante fácil. Para ello debes tener listo tu libro de Excel con el código para definir el punto base en AutoCAD donde quieres que la macro se ejecute. Si no lo recuerdas o no sabes cómo hacerlo ve al artículo **[Macro para iniciar un dibujo en AutoCAD](https://vxproject.com.mx)**.
+Crear una macro para insertar, girar y escalar un bloque ya previamente creado en su espacio de trabajo de AutoCAD es bastante fácil. Para ello debes tener listo tu libro de Excel con el código para definir el punto base en AutoCAD donde quieres que la macro se ejecute. Si no lo recuerdas o no sabes cómo hacerlo ve al artículo **[Macro para iniciar un dibujo en AutoCAD](/blog/macro-para-iniciar-un-dibujo-en-autocad)**.
 
 1. En AutoCAD crea tus bloques como prefieras, recuerda tomar en cuenta la escala con la que trabajas, así como el nombre que le darás a tu(s) bloques. 
 2. Al crear tus bloques define el “Pick point”, que es el punto base con el que sueles mover un bloque una vez insertado.
@@ -56,6 +56,6 @@ Si tu hoja de calculo tendrá celdas donde tengas la información de tus bloques
 
 En el siguiente video se muestra este procedimiento y un ejemplo más para hacer la llamada a dos diferentes placas. Una de ellas se podrá rotar dependiendo la dirección de la retenida en una cimentación.
 
-<iframe loading="lazy" id="embed_video" class="pagelayer-video-iframe" width="100%" height="650px" src="//www.youtube.com/embed/TUl6qw-6QzA?&amp;autoplay=0&amp;mute=0&amp;loop=0&amp;playlist=TUl6qw-6QzA" frameborder="0"></iframe>
+<iframe loading="lazy" id="embed_video" class="pagelayer-video-iframe" width="75%" height="450px" src="//www.youtube.com/embed/TUl6qw-6QzA?&amp;autoplay=0&amp;mute=0&amp;loop=0&amp;playlist=TUl6qw-6QzA" frameborder="0"></iframe>
 
-Si deseas descargar los archivos usados en este video, por favor ve al artículo de [descargas](https://vxproject) que te permitirá descargar este material. Ayúdanos compartiendo o dejándonos un comentario sobre lo que te ha parecido esta macro.
+Si deseas descargar los archivos usados en este video, por favor ve al artículo de [descargas](/area-de-descargas) que te permitirá descargar este material. Ayúdanos compartiendo o dejándonos un comentario sobre lo que te ha parecido esta macro.
