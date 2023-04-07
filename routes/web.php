@@ -33,11 +33,8 @@ Route::get('/blog', function() {
     return view('pages.blog', compact('posts'));
 })->name('blog.show');
 
-Route::get('/blog/{post_slug}', function(string $postSlug) {
-    $post = Post::where('slug', $postSlug)->firstOrFail();
-
-    return view('pages.post', compact('post'));
-})->name('blog.article.show');
+Route::get('/blog/{post_slug}', [\App\Http\Controllers\PostController::class, 'blogPostShow'])
+    ->name('blog.article.show');
 
 Route::get('/servicios-ingenieria-estructural', function() {
     return view('pages.servicios');

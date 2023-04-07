@@ -1,0 +1,44 @@
+.blog-post {
+    p {
+        margin: 10px 0 10px 0;
+    }
+    ul, ol {
+        margin-left: 30px;
+        li {
+            padding: 5px 5px 5px 5px;
+        }
+    }
+    a:link {
+        color: #9900ff;
+    }
+    a:hover {
+        color: #ff00ff;
+    }
+    blockquote {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 5px 15px 5px 15px;
+        background-color: gainsboro;
+    }
+    img {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+.blog-post-code {
+    font-family: monospace;
+    font-weight: bold;
+    word-break: break-all;
+}
+.blog-post-code-body {
+    padding-left: 10px;
+}
+.blog-post-image-block {
+    display: flex;
+    padding: 10px;
+    img {
+        width: 50%;
+        height: 50%;
+    }
+}
