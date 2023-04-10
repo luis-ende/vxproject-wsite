@@ -13,7 +13,7 @@ module.exports = {
             colors: {
                 'vxproject-primary': '#9900ff',
                 'vxproject-secondary': '#ff00ff',
-                'vxproject-border': '#cc99ff',
+                'vxproject-primary-light': '#cc99ff',
             },
             fontFamily: {
                 sans: ['Questrial', ...defaultTheme.fontFamily.sans],

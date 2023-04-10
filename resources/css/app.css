@@ -10,12 +10,16 @@
 
 @layer components {
     .vxproject-button-primary {
-        @apply font-montserrat uppercase text-vxproject-primary font-bold text-sm rounded-full border border-vxproject-primary px-3 py-2
+        @apply font-montserrat uppercase text-vxproject-primary font-bold text-sm rounded-full border border-vxproject-primary px-3 py-2 text-center
                 hover:text-vxproject-secondary hover:border-vxproject-secondary;
     }
 
     .vxproject-button-secondary {
-        @apply font-montserrat uppercase text-vxproject-secondary font-bold text-sm rounded-full border border-vxproject-secondary px-3 py-2
+        @apply font-montserrat uppercase text-vxproject-secondary font-bold text-sm rounded-full border border-vxproject-secondary px-3 py-2 text-center
         hover:text-vxproject-primary hover:border-vxproject-primary;
+    }
+    .vxproject-border {
+        @apply border-2 rounded-lg border-vxproject-primary-light border-opacity-50 shadow-lg
+               dark:bg-gray-800 dark:border-gray-700;
     }
 }

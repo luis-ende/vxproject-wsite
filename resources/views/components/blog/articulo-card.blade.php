@@ -1,9 +1,9 @@
 @props(['post' => null])
 
-<article class="p-3 bg-white rounded border border-vxproject-primary dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+<article class="bg-white vxproject-border flex flex-col p-5">
     <img src="{{ $post->getFirstMedia('images')->original_url }}"
          alt="{{ $post->title }}"
-         class="my-5">
+         class="my-5 w-auto h-48">
     <h3 class="text-vxproject-secondary text-xl uppercase h-20">
         {{ $post->title }}
     </h3>

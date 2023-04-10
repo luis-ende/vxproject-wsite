@@ -9,17 +9,16 @@
                 </div>
             </section>
             <section>
-                <h2 class="block text-2xl uppercase mt-10 border-b-2 border-b-vxproject-primary w-24">Macros</h2>
-                <div class="flex flex-row space-x-10 my-10">
-                    <article class="border rounded shadow-lg flex flex-col p-10 space-y-2 items-center">
+                <div class="flex flex-row flex-wrap md:space-x-10 space-x-0 md:space-y-0 space-y-5 items-center justify-center">
+                    <article class="vxproject-border flex flex-col p-10 space-y-2 items-center">
                         <span class="font-bold">Excel a AutoCAD</span>
                         <span class="text-sm text-gray-500">2.50 MB</span>
-                        <a href="#" class="vxproject-button-primary">Descargar</a>
+                        <a href="{{ Storage::url('downloads/Macro_Excel_a_AutoCAD.zip') }}" download class="vxproject-button-primary">Descargar</a>
                     </article>
-                    <article class="border rounded shadow-lg flex flex-col p-10 space-y-2 items-center">
+                    <article class="vxproject-border flex flex-col p-10 space-y-2 items-center">
                         <span class="font-bold">Excel a Staad</span>
                         <span class="text-sm text-gray-500">13.91 KB</span>
-                        <a href="#" class="vxproject-button-primary">Descargar</a>
+                        <a href="{{ Storage::url('downloads/MACRO_EXCEL_A_STAAD.rar') }}" class="vxproject-button-primary">Descargar</a>
                     </article>
                 </div>
             </section>

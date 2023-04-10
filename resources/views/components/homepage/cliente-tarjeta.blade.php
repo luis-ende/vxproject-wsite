@@ -5,7 +5,7 @@
     'actividad' => ''
 ])
 
-<div class="border-2 rounded-lg border-vxproject-border border-opacity-50 p-10 shadow-lg">
+<div class="vxproject-border p-10">
     <div class="h-2/3">
         <img src="{{ $src }}" alt="{{ $alt }}"
              class="object-scale-down w-full h-full">
