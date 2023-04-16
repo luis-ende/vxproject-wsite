@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
-use Illuminate\Http\Request;
-use League\CommonMark\CommonMarkConverter;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 use League\CommonMark\Environment\Environment;
 use League\CommonMark\Extension\Attributes\AttributesExtension;
 use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
@@ -25,6 +26,40 @@ class PostController extends Controller
         $post_content = $converter->convert(
             file_get_contents(resource_path('views/posts/content/') . $post->post_template . '.md'));
 
-        return view('pages.post', compact('post', 'post_content'));
+        Carbon::setlocale(config('app.locale'));
+        $comments = [];
+        $allComments = $this->getPostComments($post);
+        foreach ($allComments as $comment) {
+            if (is_null($comment->parent_id)) {
+                $childComments = $allComments->where('parent_id', $comment->id)
+                                             ->map(function($child) {
+                                                 return [
+                                                     'id' => $child->id,
+                                                     'guest_name' => $child->guest_name,
+                                                     'content' => $child->content,
+                                                     'created_at' => Carbon::parse($child->created_at)
+                                                         ->translatedFormat('F d, Y'),
+                                                 ];
+                                             });
+                $comments[] = [
+                    'id' => $comment->id,
+                    'guest_name' => $comment->guest_name,
+                    'content' => $comment->content,
+                    'created_at' => Carbon::parse($comment->created_at)
+                        ->translatedFormat('F d, Y'),
+                    'comments' => $childComments,
+                ];
+            }
+        }
+
+        return view('pages.post', compact('post', 'post_content', 'comments'));
+    }
+
+    public function getPostComments(Post $post): Collection
+    {
+        return DB::table('comments AS c')
+                    ->select('c.id', 'c.parent_id', 'c.content', 'c.created_at', 'gc.guest_name')
+                    ->join('guest_comments AS gc', 'gc.id_comment', 'c.id')
+                    ->get();
     }
 }

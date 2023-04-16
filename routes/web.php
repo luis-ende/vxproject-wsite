@@ -36,6 +36,9 @@ Route::get('/blog', function() {
 Route::get('/blog/{post_slug}', [\App\Http\Controllers\PostController::class, 'blogPostShow'])
     ->name('blog.article.show');
 
+Route::post('/comments', [\App\Http\Controllers\CommentsController::class, 'store'])
+    ->name('comments.store');
+
 Route::get('/servicios-ingenieria-estructural', function() {
     return view('pages.servicios');
 })->name('servicios.show');
