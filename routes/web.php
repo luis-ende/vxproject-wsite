@@ -39,9 +39,8 @@ Route::get('/servicios-ingenieria-estructural', function() {
     return view('pages.servicios');
 })->name('servicios.show');
 
-Route::get('/contacto', function() {
-    return view('pages.contacto');
-})->name('contacto.show');
+Route::get('/contacto', [\App\Http\Controllers\ContactoController::class, 'show'])->name('contacto.show');
+Route::post('/contacto/form', [\App\Http\Controllers\ContactoController::class, 'store'])->name('contacto.form.store');
 
 Route::get('/codigos-disenio', function () {
     return view('pages.codigos-disenio');
