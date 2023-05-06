@@ -19,6 +19,7 @@ class PostSeeder extends Seeder
             'post_template' => 'macro-autocad-bloques',
             'slug' => 'macro-para-dibujar-en-autocad-bloques',
             'user_id' => 1,
+            'secuencia' => 2,
         ]);
         $post->addMedia('public/images/articulos/Control-VBA-BLOQUES.png')
             ->preservingOriginal()
@@ -30,6 +31,7 @@ class PostSeeder extends Seeder
             'post_template' => 'macro-iniciar-autocad',
             'slug' => 'macro-para-iniciar-un-dibujo-en-autocad',
             'user_id' => 1,
+            'secuencia' => 4,
         ]);
         $post->addMedia('public/images/articulos/PORTADA-ART-INICIO.jpg')
             ->preservingOriginal()
@@ -41,6 +43,7 @@ class PostSeeder extends Seeder
             'post_template' => 'macro-autocad-circulos',
             'slug' => 'macro-excel-para-dibujar-en-autocad-circulos',
             'user_id' => 1,
+            'secuencia' => 3,
         ]);
         $post->addMedia('public/images/articulos/circulo.jpg')
             ->preservingOriginal()
@@ -52,6 +55,7 @@ class PostSeeder extends Seeder
             'post_template' => 'macro-autocad-hatch',
             'slug' => 'macro-excel-para-dibujar-en-autocad-hatch',
             'user_id' => 1,
+            'secuencia' => 1,
         ]);
         $post->addMedia('public/images/articulos/Hatch.png')
             ->preservingOriginal()

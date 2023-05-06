@@ -1,5 +1,5 @@
 <article class="bg-white vxproject-border flex flex-col p-5">
-    <img src="{{ asset('images/articulos/DESCARGASIMAG.jpg') }}"
+    <img src="{{ asset('images/articulos/DESCARGAS-VX.jpg') }}"
          alt="Descargas"
          class="my-5 w-auto h-48">
     <h3 class="text-vxproject-secondary text-xl uppercase h-20">

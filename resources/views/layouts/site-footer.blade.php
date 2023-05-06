@@ -7,12 +7,6 @@
         @svg('ri-youtube-fill', ['class' => 'w-8 h-8'])
         YouTube
     </a>
-    <div class="px-10">
-        <a href="mailto:contacto@vxproject.com.mx" class="flex flex-col items-center">
-            @svg('clarity-email-solid', ['class' => 'w-8 h-8'])
-            contacto@vxproject.com.mx
-        </a>
-    </div>
 </div>
 <div class="bg-white font-bold text-base text-gray-800 h-5 text-center font-montserrat">
     <span>&#169; 2019 - {{ date("Y") }} VX Project</span>

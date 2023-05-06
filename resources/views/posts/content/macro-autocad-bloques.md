@@ -1,5 +1,7 @@
 Crear una macro para insertar, girar y escalar un bloque ya previamente creado en su espacio de trabajo de AutoCAD es bastante fácil. Para ello debes tener listo tu libro de Excel con el código para definir el punto base en AutoCAD donde quieres que la macro se ejecute. Si no lo recuerdas o no sabes cómo hacerlo ve al artículo **[Macro para iniciar un dibujo en AutoCAD](/blog/macro-para-iniciar-un-dibujo-en-autocad)**.
 
+---
+
 1. En AutoCAD crea tus bloques como prefieras, recuerda tomar en cuenta la escala con la que trabajas, así como el nombre que le darás a tu(s) bloques. 
 2. Al crear tus bloques define el “Pick point”, que es el punto base con el que sueles mover un bloque una vez insertado.
 3. Abre Excel y ten preparado el editor de Visual Basic.

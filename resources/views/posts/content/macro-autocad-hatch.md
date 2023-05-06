@@ -1,5 +1,7 @@
 Veremos como colocar uno o varios HATCH en nuestros proyectos de AutoCAD a través de EXCEL con la ayuda de macros. Si no lo recuerdas o no sabes cómo hacerlo ve al artículo **[Macro para iniciar un dibujo en AutoCAD](/blog/macro-para-iniciar-un-dibujo-en-autocad)**.
 
+---
+
 1. Abre Excel y ten preparado el editor de Visual Basic.
 2. La función que permite AutoCAD para realizar esto es la siguiente:
 
@@ -39,7 +41,7 @@ Veremos como colocar uno o varios HATCH en nuestros proyectos de AutoCAD a trav�
 
 ---
 
-NOTAS:
+Notas:
 
 El parámetro **.AppendOuterLoop (Variable)** es el que nos permite identificar en AutoCAD el limite de la figura o bien la forma en la que queremos que tome como limite el HATCH. Existe otro parámetro llamado **.AppendInnerLoop (Variable)** que nos permite indicar cual sería el limite de un AcadEntity en caso de que este sea un objeto interno al cual no queremos que se le aplique el HATCH.
 

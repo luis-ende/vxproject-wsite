@@ -27,11 +27,7 @@ Route::get('/area-de-descargas', function() {
     return view('pages.descargas');
 })->name('area-descargas.show');
 
-Route::get('/blog', function() {
-    $posts = Post::all();
-
-    return view('pages.blog', compact('posts'));
-})->name('blog.show');
+Route::get('/blog', [\App\Http\Controllers\BlogController::class, 'index'])->name('blog.show');
 
 Route::get('/blog/{post_slug}', [\App\Http\Controllers\PostController::class, 'blogPostShow'])
     ->name('blog.article.show');
@@ -46,6 +42,10 @@ Route::get('/servicios-ingenieria-estructural', function() {
 Route::get('/contacto', function() {
     return view('pages.contacto');
 })->name('contacto.show');
+
+Route::get('/codigos-disenio', function () {
+    return view('pages.codigos-disenio');
+})->name('codigos-disenio.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

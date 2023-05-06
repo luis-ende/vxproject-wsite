@@ -8,7 +8,7 @@
                 <a href="{{ route('vxproject-presentacion.show') }}"
                    class="block w-32 font-montserrat text-center mt-10 vxproject-button-primary text-base py-1">Leer más</a>
             </div>
-            <div class="md:px-10 px-5 px-2 absolute top-0 right-0">
+            <div class="md:px-10 px-5 absolute top-0 right-0">
                <img src="{{ asset('images/VXP-IMAIN-08.svg') }}"
                     alt="VX Project Banner"
                     class="w-[722.76px] h-[782.59px]">
@@ -24,7 +24,7 @@
                <span class="text-vxproject-secondary md:text-5xl text-xl">
                    Códigos de diseño actualizados
                </span>
-               <a href="#" class="block w-32 font-montserrat text-center mt-10 vxproject-button-primary text-base py-1">Leer más</a>
+               <a href="{{ route('codigos-disenio.index') }}" class="block w-32 font-montserrat text-center mt-10 vxproject-button-primary text-base py-1">Leer más</a>
            </div>
         </section>
         <section class="flex flex-row items-center my-5">
@@ -32,7 +32,7 @@
                <span class="text-vxproject-secondary md:text-5xl text-xl">
                    Respuesta rápida
                </span>
-                <a href="#"
+                <a href="{{ route('vxproject-presentacion.show') }}"
                    class="block w-32 font-montserrat text-center mt-10 vxproject-button-primary text-base py-1">Leer más</a>
             </div>
             <div class="basis-1/2 md:p-10 p-5">
@@ -51,7 +51,7 @@
                <span class="text-vxproject-secondary md:text-5xl text-xl">
                    Artículos de ingeniería y macros (VBA)
                </span>
-                <a href="#" class="block w-32 font-montserrat text-center mt-10 vxproject-button-primary text-base py-1">Leer más</a>
+                <a href="{{ route('blog.show') }}" class="block w-32 font-montserrat text-center mt-10 vxproject-button-primary text-base py-1">Leer más</a>
             </div>
         </section>
         <section class="md:my-24">

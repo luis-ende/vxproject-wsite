@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('post_template');
             $table->string('slug');
             $table->foreignId('user_id')->constrained();
+            $table->unsignedBigInteger('secuencia')->default(1);
             $table->timestamps();
         });
     }
