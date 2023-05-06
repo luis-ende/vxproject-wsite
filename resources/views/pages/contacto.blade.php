@@ -13,7 +13,7 @@
         <div class="px-10 md:px-0 flex flex-col items-center">
             <section class="bg-white dark:bg-gray-900">
                 <div class="py-8 lg:py-8 px-4 mx-auto max-w-screen-md">
-                    <div class="font-light text-left text-gray-900 dark:text-gray-400 sm:text-xl my-8">
+                    <div id="contacto-opciones" class="font-light text-left text-gray-900 dark:text-gray-400 sm:text-xl my-8">
                         <p class="mb-8">
                             Contáctanos y con gusto te ofreceremos una pronta respuesta para los siguientes temas:
                         </p>

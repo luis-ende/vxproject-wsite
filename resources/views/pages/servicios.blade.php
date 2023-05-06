@@ -32,8 +32,10 @@
                         <p class="h-48 text-xl">
                             Diseños de distintos tipos de torres de telecomunicaciones con los más actuales códigos de diseño aplicados en un modelo matemático tridimensional.
                         </p>
-                        <button type="button" class="vxproject-button-primary self-end my-2 w-40">Ver códigos</button>
-                        <button type="button" class="vxproject-button-primary self-end my-2 w-40">Contáctanos</button>
+                        <a href="{{ route('codigos-disenio.index') }}"
+                           class="vxproject-button-primary self-end my-2 w-40">Ver códigos</a>
+                        <a href="{{ route('contacto.show') . '?asunto=2#contacto-opciones' }}"
+                           class="vxproject-button-primary self-end my-2 w-40">Contáctanos</a>
                     </article>
 
                     <article class="bg-white vxproject-border flex flex-col p-5">
@@ -43,8 +45,10 @@
                         <p class="h-48 text-xl">
                             Diseños de cimentaciones ya sea de concreto o acero para los distintos tipos de torres de telecomunicaciones con los más actuales códigos de diseño.
                         </p>
-                        <button type="button" class="vxproject-button-primary self-end my-2 w-40">Ver códigos</button>
-                        <button type="button" class="vxproject-button-primary self-end my-2 w-40">Contáctanos</button>
+                        <a href="{{ route('codigos-disenio.index') }}"
+                           class="vxproject-button-primary self-end my-2 w-40">Ver códigos</a>
+                        <a href="{{ route('contacto.show') . '?asunto=2#contacto-opciones' }}"
+                           class="vxproject-button-primary self-end my-2 w-40">Contáctanos</a>
                     </article>
 
                     <article class="bg-white vxproject-border flex flex-col p-5">
@@ -54,8 +58,10 @@
                         <p class="h-56 text-xl">
                             Diseño de elementos estructurales de concreto y/o acero, así como de muros de retención y/o contención de concreto o mampostería que requiera la radio base.
                         </p>
-                        <button type="button" class="vxproject-button-primary self-end my-2 w-40">Ver códigos</button>
-                        <button type="button" class="vxproject-button-primary self-end my-2 w-40">Contáctanos</button>
+                        <a href="{{ route('codigos-disenio.index') }}"
+                           class="vxproject-button-primary self-end my-2 w-40">Ver códigos</a>
+                        <a href="{{ route('contacto.show') . '?asunto=2#contacto-opciones' }}"
+                           class="vxproject-button-primary self-end my-2 w-40">Contáctanos</a>
                     </article>
 
                     <article class="bg-white vxproject-border flex flex-col p-5">
@@ -65,8 +71,10 @@
                         <p class="h-56 text-xl">
                             Revisión de distintos tipos de torres de telecomunicaciones con los códigos de diseño que se emplearon para el diseño del proyecto original. Se revisa el estado actual. Se revisa con incremento tanto de cargas como de tramos adicionales.
                         </p>
-                        <button type="button" class="vxproject-button-primary self-end my-2 w-40">Ver códigos</button>
-                        <button type="button" class="vxproject-button-primary self-end my-2 w-40">Contáctanos</button>
+                        <a href="{{ route('codigos-disenio.index') }}"
+                           class="vxproject-button-primary self-end my-2 w-40">Ver códigos</a>
+                        <a href="{{ route('contacto.show') . '?asunto=2#contacto-opciones' }}"
+                           class="vxproject-button-primary self-end my-2 w-40">Contáctanos</a>
                     </article>
 
                     <article class="bg-white vxproject-border flex flex-col p-5">
@@ -76,8 +84,10 @@
                         <p class="h-56 text-xl">
                             Planos estructurales resultantes del cálculo estructural de torre, de cimentación, de elementos de acero y/o concreto, así como de propuestas de reforzamiento.
                         </p>
-                        <button type="button" class="vxproject-button-primary self-end my-2 w-40">Ver códigos</button>
-                        <button type="button" class="vxproject-button-primary self-end my-2 w-40">Contáctanos</button>
+                        <a href="{{ route('codigos-disenio.index') }}"
+                           class="vxproject-button-primary self-end my-2 w-40">Ver códigos</a>
+                        <a href="{{ route('contacto.show') . '?asunto=2#contacto-opciones' }}"
+                           class="vxproject-button-primary self-end my-2 w-40">Contáctanos</a>
                     </article>
                 </div>
             </section>
