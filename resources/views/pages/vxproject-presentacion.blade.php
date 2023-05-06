@@ -26,8 +26,8 @@
                     En el apartado de <a class="vxproject-link-primary" href="{{ route('blog.show') }}">artículos</a> estaremos publicando información para complementar de mejor manera los tutoriales presentados en nuestro canal de <a class="vxproject-link-primary" href="https://www.youtube.com/channel/UC0I8BpJmOnqHWkullj_Q_Pg" target="_blank">YouTube</a>, y temas relacionados con la ingeniería civil, así como de las telecomunicaciones.
                 </p>
                 <br>
-                <p class="font-bold my-10">
-                    <span class="text-vxproject-primary">VX</span> Project agradece tu visita y tu preferencia.
+                <p class="my-10">
+                    <span class="text-vxproject-primary font-bold">VX </span><span class="font-bold ">Project</span> agradece tu visita y tu preferencia.
                 </p>
             </article>
         </section>
