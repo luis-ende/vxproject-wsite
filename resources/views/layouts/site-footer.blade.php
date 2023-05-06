@@ -1,5 +1,6 @@
 <div class="bg-vxproject-primary font-montserrat text-white font-bold md:h-32 py-5 flex md:flex-row flex-col items-center justify-center md:space-x-10 md:space-y-0 space-y-2">
-    <a href="#" target="_blank" class="flex flex-col items-center">
+    <a href="https://www.google.com/url?q=https://www.facebook.com/people/VX-Project/100063474734908/"
+       target="_blank" class="flex flex-col items-center">
         @svg('ri-facebook-fill', ['class' => 'w-8 h-8'])
         facebook
     </a>
