@@ -58,8 +58,11 @@ class PostController extends Controller
     public function getPostComments(Post $post): Collection
     {
         return DB::table('comments AS c')
-                    ->select('c.id', 'c.parent_id', 'c.content', 'c.created_at', 'gc.guest_name')
-                    ->join('guest_comments AS gc', 'gc.id_comment', 'c.id')
+                    ->select('c.id', 'c.parent_id', 'c.content', 'c.created_at', 'c.guest_name')
+                    ->where([
+                        ['c.published', true],
+                        ['deleted_at', null],
+                    ])
                     ->get();
     }
 }

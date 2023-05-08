@@ -19,54 +19,59 @@
                 </article>
             </section>
 
-            {{--<span id="status-message" class="w-full block text-green-400 text-base my-4 font-bold text-center">¡Mensaje enviado!</span>--}}
-
             {{-- Sección de comentarios--}}
-            <section class="bg-white dark:bg-gray-900 py-8 lg:py-16 md:w-1/2"
+            <section id="seccion-comentarios"
+                     class="bg-white dark:bg-gray-900 py-8 lg:py-16 md:w-full"
                      x-data="commentsSection()"
                      x-init="commentsSectionInit()">
-                <div class="max-w-2xl mx-auto md:px-4">
+
+                <div class="max-w-3xl mx-auto md:px-4">
                     <div class="flex justify-between items-center mb-6">
                         <h2 class="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white">Comentarios (<span x-text="comments.length"></span>)</h2>
                     </div>
 
                     <template id="commentForm" x-teleport="#post-comment">
                         <form x-ref="commentForm"
-                              class="mb-6"
+                              class="mb-6 flex flex-col"
                               method="POST"
                               action="{{ route('comments.store') }}">
                             @csrf
                             <input type="hidden" value="{{ $post['id'] }}" name="post_id">
                             <input type="hidden" :value="activeCommentId" name="parent_comment">
-                            <label for="nombre" class="font-bold">Nombre*</label>
-                            <div class="px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-                                <input x-ref="inputNombre" type="text" id="nombre" name="nombre"
-                                       required
-                                       class="px-0 w-full text-sm text-gray-900 border-0 focus:ring-0 focus:outline-none dark:text-white dark:placeholder-gray-400 dark:bg-gray-800">
-                            </div>
 
-                            <label for="comment" class="font-bold">Comentario*</label>
-                            <div class="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-                                <textarea x-ref="inputComment" id="comment" name="comment" rows="4"
-                                          class="px-0 w-full text-sm text-gray-900 border-0 focus:ring-0 focus:outline-none dark:text-white dark:placeholder-gray-400 dark:bg-gray-800"
-                                          placeholder="Escribe un comentario..." required></textarea>
-                            </div>
+                            <label for="nombre" class="block mb-2 text-base font-medium text-gray-900 dark:text-gray-300">Nombre</label>
+                            <input x-ref="inputNombre" type="text" id="nombre" name="nombre"
+                                   required
+                                   class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-vxproject-secondary focus:border-vxproject-secondary dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-vxproject-secondary dark:focus:border-vxproject-secondary dark:shadow-sm-light mb-5">
+
+                            <label for="comment">Comentario</label>
+                            <textarea x-ref="inputComment" id="comment" name="comment" rows="4"
+                                      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-vxproject-secondary focus:border-vxproject-secondary dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-vxproject-secondary dark:focus:border-vxproject-secondary"
+                                      placeholder="Escribe un comentario..." required></textarea>
                             <span class="block text-xs text-red-600 my-3" x-text="errors"></span>
-                            <button type="button"
-                                    @click.prevent="sendComment($event.target.parentElement)"
-                                    class="inline-flex items-center py-2.5 px-4 vxproject-button-primary">
-                                Enviar
-                            </button>
-                            <button type="button"
-                                    @click.prevent="closeAnswerComment()"
-                                    class="inline-flex items-center py-2.5 px-4 vxproject-button-primary"
-                                    x-show="showCommentForm">
-                                Cancelar
-                            </button>
+
+                            <div class="flex flex-row justify-end space-x-3">
+                                <button type="button"
+                                        @click.prevent="closeAnswerComment()"
+                                        class="inline-flex items-center py-2.5 px-4 vxproject-button-primary self-end"
+                                        x-show="showCommentForm">
+                                    Cancelar
+                                </button>
+                                <button type="button"
+                                        @click.prevent="sendComment($refs.commentForm)"
+                                        class="inline-flex items-center py-2.5 px-4 vxproject-button-primary self-end">
+                                    Enviar
+                                </button>
+                            </div>
                         </form>
                     </template>
 
                     <div id="post-comment" x-show="!showCommentForm"></div>
+
+                    <div x-show="estatusMessage !== null"
+                         class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+                        <span class="font-bold" x-text="estatusMessage"></span>
+                    </div>
 
                     <template x-for="comment in comments" :key="comment.id">
                         <article class="commentArticle p-6 mb-6 text-base border-t border-gray-200 bg-white rounded-lg dark:bg-gray-900"
@@ -75,7 +80,7 @@
                                 <div class="flex items-center">
                                     <p class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
                                         @svg('ik-user', ['class' => 'mr-2 w-6 h-6'])
-                                        <span x-text="comment.guest_name">Usuario test</span>
+                                        <span x-text="comment.guest_name"></span>
                                     </p>
                                     <p class="text-sm text-gray-600 dark:text-gray-400">
                                         <time pubdate :datetime="comment.created_at" :title="comment.created_at" x-text="comment.created_at">
@@ -122,6 +127,8 @@
                 function commentsSection() {
                     return {
                         showCommentForm: false,
+                        estatusMessage: null,
+                        errorMessage: null,
                         activeCommentId: null,
                         errors: '',
                         comments: @js($comments),
@@ -129,6 +136,7 @@
                             console.log(this.comments)
                         },
                         sendComment(form) {
+                            this.estatusMessage = null;
                             const formData = new FormData(form);
                             if (!formData.get('nombre') || !formData.get('comment')) {
                                 this.errors = 'Por favor proporciona nombre y comentario.';
@@ -146,22 +154,23 @@
                             }).then(response => response.json())
                                 .then(json => {
                                     if (this.activeCommentId) {
-                                        const comment = this.comments.find(c => c.id === this.activeCommentId);
-                                        if (!comment.comments) {
-                                            comment.comments = [];
-                                        }
-                                        comment.comments[json.id] = json;
+                                        // const comment = this.comments.find(c => c.id === this.activeCommentId);
+                                        // if (!comment.comments) {
+                                        //     comment.comments = {};
+                                        // }
+                                        //comment.comments[json.id] = { ...json };
                                         this.closeAnswerComment();
                                     } else {
-                                        this.comments.push(json);
+                                        //this.comments.push(json);
                                         this.clearCommentForm();
                                     }
 
-                                    // TODO
-                                    // document.getElementById('status-message').scrollIntoView();
+                                    this.estatusMessage = "Tu comentario ha sido enviado.";
+                                    document.getElementById('seccion-comentarios').scrollIntoView();
                                 })
                         },
                         showAnswerComment(id) {
+                            this.estatusMessage = null;
                             if (this.showCommentForm) {
                                 this.closeAnswerComment();
                             }

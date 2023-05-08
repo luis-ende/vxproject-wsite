@@ -19,6 +19,7 @@
 
 ### Paquetes utilizados
 
+- Traducciones de mensajes Laravel: [https://laravel-lang.com/](https://laravel-lang.com/)
 - Íconos svg en templates Balde: Blade UI Kit - [https://github.com/blade-ui-kit/blade-icons](https://github.com/blade-ui-kit/blade-icons)
 - Gestión de fuentes Google: Laravel Google Fonts - [https://github.com/spatie/laravel-google-fonts](https://github.com/spatie/laravel-google-fonts)
 - Artículos (blog) y gestión de páginas:

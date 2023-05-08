@@ -32,6 +32,11 @@ Route::get('/blog', [\App\Http\Controllers\BlogController::class, 'index'])->nam
 Route::get('/blog/{post_slug}', [\App\Http\Controllers\PostController::class, 'blogPostShow'])
     ->name('blog.article.show');
 
+Route::get('revisar-comentario/{access_token}', [\App\Http\Controllers\CommentsController::class, 'review'])
+    ->name('comment.review');
+Route::post('revisar-comentario/update', [\App\Http\Controllers\CommentsController::class, 'commentApproval'])
+    ->name('comment.status.update');
+
 Route::post('/comments', [\App\Http\Controllers\CommentsController::class, 'store'])
     ->name('comments.store');
 

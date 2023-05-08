@@ -14,6 +14,8 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id')->index()->nullable();
             $table->morphs('commentable');
             $table->longText('content');
+            $table->string('guest_name', 100);
+            $table->boolean('published')->default(false);
             $table->timestamps();
             $table->softDeletes();
         });
