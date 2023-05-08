@@ -6,6 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>VX Project / Ingeniería estructural para torres de telecomunicación - @yield('page_title')</title>
+        <link rel="shortcut icon" href="{{ asset('images/VXCIRCULO.png') }}">
 
         <!-- Fonts -->
         @googlefonts
