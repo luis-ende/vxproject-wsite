@@ -15,6 +15,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans bg-white antialiased">
+        <x-page-loader />
+
         <header>
             @include('layouts.navigation-guest')
             @yield('page_header')
@@ -31,5 +33,11 @@
         <footer>
             @include('layouts.site-footer')
         </footer>
+
+        <script>
+            window.addEventListener("load", (event) => {
+                document.getElementById('page-loader').style.display = "none";
+            });
+        </script>
     </body>
 </html>
