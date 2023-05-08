@@ -37,6 +37,7 @@
 
         <script>
             window.addEventListener("load", (event) => {
+                document.getElementsByTagName('body')[0].classList.add('complete');
                 document.getElementById('page-loader').style.display = "none";
             });
         </script>
