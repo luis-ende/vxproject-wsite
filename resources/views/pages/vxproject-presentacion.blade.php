@@ -3,7 +3,7 @@
     <div class="px-10 md:px-0 flex flex-col items-center">
         <section class="bg-white overflow-hidden min-h-screen my-10 pb-10">
             <div class="mt-20 mb-10 px-10 md:px-0">
-                <h1 class="block md:text-5xl text-xl text-vxproject-primary my-10">Bievenidos</h1>
+                <h1 class="block md:text-5xl text-xl text-vxproject-primary my-10">Bienvenidos</h1>
             </div>
             <article class="px-10 md:px-0">
                 <p class="border-t pt-10">
