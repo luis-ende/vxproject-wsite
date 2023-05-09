@@ -54,7 +54,7 @@
                 <a href="{{ route('blog.show') }}" class="block w-32 font-montserrat text-center mt-10 vxproject-button-primary text-base py-1">Leer más</a>
             </div>
         </section>
-        <section class="md:my-24">
+        <section class="my-14 md:my-24">
             <span class="block md:text-5xl text-xl text-vxproject-primary my-10 px-10">Clientes</span>
             <x-homepage.clientes-grid />
         </section>
