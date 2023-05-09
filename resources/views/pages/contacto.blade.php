@@ -82,6 +82,7 @@
                             <textarea id="mensaje" name="mensaje" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-vxproject-secondary focus:border-vxproject-secondary dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-vxproject-secondary dark:focus:border-vxproject-secondary"
                                       placeholder="Mensaje..."></textarea>
                         </div>
+                        <x-honey/>
                         <div class="flex justify-end">
                             <button type="submit" class="vxproject-button-primary">Envíar mensaje</button>
                         </div>

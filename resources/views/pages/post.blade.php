@@ -50,6 +50,8 @@
                                       placeholder="Escribe un comentario..." required></textarea>
                             <span class="block text-xs text-red-600 my-3" x-text="errors"></span>
 
+                            <x-honey/>
+
                             <div class="flex flex-row justify-end space-x-3">
                                 <button type="button"
                                         @click.prevent="closeAnswerComment()"

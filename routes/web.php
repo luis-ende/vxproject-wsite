@@ -38,6 +38,7 @@ Route::post('revisar-comentario/update', [\App\Http\Controllers\CommentsControll
     ->name('comment.status.update');
 
 Route::post('/comments', [\App\Http\Controllers\CommentsController::class, 'store'])
+    ->middleware(['honey'])
     ->name('comments.store');
 
 Route::get('/servicios-ingenieria-estructural', function() {
@@ -45,7 +46,9 @@ Route::get('/servicios-ingenieria-estructural', function() {
 })->name('servicios.show');
 
 Route::get('/contacto', [\App\Http\Controllers\ContactoController::class, 'show'])->name('contacto.show');
-Route::post('/contacto/form', [\App\Http\Controllers\ContactoController::class, 'store'])->name('contacto.form.store');
+Route::post('/contacto/form', [\App\Http\Controllers\ContactoController::class, 'store'])
+    ->middleware(['honey'])
+    ->name('contacto.form.store');
 
 Route::get('/codigos-disenio', function () {
     return view('pages.codigos-disenio');
