@@ -64,8 +64,9 @@ body.complete > *:not(#page-loader) {
     }
 }
 
-.lds-ring svg {
+.lds-ring img {
     color: #9B57C1;
+    font-size: 54px;
     position: absolute;
     width: 100%;
     height: 100%;
