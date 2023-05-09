@@ -7,7 +7,6 @@
 
         <title>VX Project / Ingeniería estructural para torres de telecomunicación - @yield('page_title')</title>
         <link rel="shortcut icon" href="{{ asset('images/VXCIRCULO.png') }}">
-        <link rel="preload" as="image" href="{{ asset('/images/VXCIRCULO.svg') }}">
 
         <!-- Fonts -->
         @googlefonts
@@ -38,10 +37,8 @@
 
         <script>
             window.addEventListener("load", (event) => {
-                setTimeout(function() {
-                    document.getElementsByTagName('body')[0].classList.add('complete');
-                    document.getElementById('page-loader').style.display = "none";
-                }, 5000)
+                document.getElementsByTagName('body')[0].classList.add('complete');
+                document.getElementById('page-loader').style.display = "none";
             });
         </script>
     </body>
