@@ -41,7 +41,7 @@ body.complete > *:not(#page-loader) {
     width: 104px;
     height: 104px;
     margin: 8px;
-    border: 1px solid #fff;
+    border: 1px solid;
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     border-color: #9B57C1 transparent transparent transparent;
@@ -64,14 +64,14 @@ body.complete > *:not(#page-loader) {
     }
 }
 
-.lds-ring span {
+.lds-ring img {
     color: #9B57C1;
     font-size: 54px;
     position: absolute;
     width: 100%;
     height: 100%;
+    padding: 15px;
     text-align: center;
-    padding-top: 20px;
 }
 
 /* Page Loader */

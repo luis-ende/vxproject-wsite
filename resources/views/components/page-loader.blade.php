@@ -4,6 +4,6 @@
         <div></div>
         <div></div>
         <div></div>
-        <span>VX</span>
+        <img src="/images/VXCIRCULO.svg" alt="VX Project Logo">
     </div>
 </div>
