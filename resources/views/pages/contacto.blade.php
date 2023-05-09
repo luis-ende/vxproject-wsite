@@ -13,8 +13,6 @@
         <div class="px-10 md:px-0 flex flex-col items-center">
             <section class="bg-white dark:bg-gray-900">
                 <div class="py-8 lg:py-8 px-4 mx-auto max-w-screen-md">
-                    <x-notification-alert />
-
                     <form id="contacto_form" action="{{ route('contacto.form.store') }}" method="POST" class="space-y-8">
                         @csrf
                         <div id="contacto-opciones" class="font-light text-left text-gray-900 dark:text-gray-400 sm:text-xl my-8">
