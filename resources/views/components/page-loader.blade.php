@@ -4,6 +4,6 @@
         <div></div>
         <div></div>
         <div></div>
-        <img src="{{ asset('/images/VXCIRCULO.jpeg') }}" alt="VX Project Logo">
+        <img src="{{ asset('/images/VXCIRCULO_LOADER.png') }}" alt="VX Project Logo">
     </div>
 </div>
