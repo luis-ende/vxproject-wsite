@@ -1,7 +1,7 @@
 <x-guest-layout>
     @section('page_title', 'Inicio')
     <div class="flex flex-col">
-        <section class="flex flex-row justify-between relative md:mt-32 mt-16">
+        <section class="flex flex-row justify-between relative md:mt-28 mt-16 mb-28 md:mb-0">
             <div class="px-10 md:py-48 py-10 z-10">
                 <span class="block text-vxproject-secondary text-lg lowercase">Telecomunicaciones</span>
                 <span class="block text-vxproject-primary text-3xl md:text-7xl w-48 md:w-full">Ingeniería Estructural</span>
@@ -14,7 +14,7 @@
                     class="w-[722.76px] h-[622.59px] md:h-[782.59px]">
             </div>
         </section>
-        <section class="flex flex-row mt-96 items-center my-5 z-40">
+        <section class="flex flex-row mt-96 items-center my-5">
             <div class="basis-1/2 md:p-10 p-5">
                 <img src="{{ asset('images/CODIGOSMAC-1024x682.gif') }}"
                      alt="Códigos de diseño actualizados"
