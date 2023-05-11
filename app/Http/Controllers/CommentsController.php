@@ -96,7 +96,7 @@ class CommentsController extends Controller
     private function sendMailNotification(array $commentInfo): void
     {
         try {
-            $commentInfo['articulo'] = Post::firstWhere('id', $commentInfo['post_id'])->value('title');
+            $commentInfo['articulo'] = Post::where('id', $commentInfo['post_id'])->value('title');
         } catch (\Exception $e) {
             $commentInfo['articulo'] = 'Artículo no encontrado.';
         }
