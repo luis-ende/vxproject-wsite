@@ -5,7 +5,7 @@
             <div class="mt-20 mb-10 px-10 md:px-0">
                 <h1 class="block md:text-5xl text-xl text-vxproject-primary my-10">Bienvenidos</h1>
             </div>
-            <article class="px-10 md:px-0">
+            <article class="px-5 md:px-0">
                 <p class="border-t pt-10">
                     Somos un equipo dedicado al diseño y revisión estructural de torres de telecomunicaciones. Cada ingeniería realizada cuenta con memorias de cálculo, modelos matemáticos, planos estructurales de torre y cimentación, además de apegarnos a los requerimientos y necesidades de cada cliente.
                 </p>

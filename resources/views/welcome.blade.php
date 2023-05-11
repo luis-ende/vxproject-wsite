@@ -11,10 +11,10 @@
             <div class="md:px-10 px-5 absolute top-0 right-0">
                <img src="{{ asset('images/VXP-IMAIN-08.svg') }}"
                     alt="VX Project Banner"
-                    class="w-[722.76px] h-[782.59px]">
+                    class="w-[722.76px] h-[622.59px] md:h-[782.59px]">
             </div>
         </section>
-        <section class="flex flex-row mt-96 items-center my-5">
+        <section class="flex flex-row mt-96 items-center my-5 z-40">
             <div class="basis-1/2 md:p-10 p-5">
                 <img src="{{ asset('images/CODIGOSMAC-1024x682.gif') }}"
                      alt="Códigos de diseño actualizados"
