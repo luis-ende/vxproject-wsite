@@ -60,6 +60,8 @@ class PostController extends Controller
         return DB::table('comments AS c')
                     ->select('c.id', 'c.parent_id', 'c.content', 'c.created_at', 'c.guest_name')
                     ->where([
+                        ['c.commentable_type', Post::class],
+                        ['c.commentable_id', $post->id],
                         ['c.published', true],
                         ['deleted_at', null],
                     ])
