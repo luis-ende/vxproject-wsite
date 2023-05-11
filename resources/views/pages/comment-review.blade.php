@@ -37,9 +37,7 @@
                     <label for="eliminar" class="ml-5">Eliminar</label>
                     <input id="eliminar" type="radio" name="action" value="2"
                            class="w-5 h-5 text-vxproject-secondary border-vxproject-secondary focus:ring-vxproject-primary rounded-full">
-                    <div class="mt-10 flex flex-row space-x-4">
-                        <button type="submit" class="vxproject-button-primary">Enviar</button>
-                    </div>
+                    <button type="submit" class="vxproject-button-primary ml-7">Enviar</button>
                 </form>
             @endif
         </div>
