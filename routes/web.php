@@ -19,11 +19,11 @@ Route::get('/', function () {
     return view('welcome');
 })->name('homepage');
 
-Route::get('/vxproject-presentacion', function() {
+Route::get('/vxproject-ingenieria-estructural', function() {
     return view('pages.vxproject-presentacion');
 })->name('vxproject-presentacion.show');
 
-Route::get('/area-de-descargas', function() {
+Route::get('/descargas', function() {
     return view('pages.descargas');
 })->name('area-descargas.show');
 
@@ -62,6 +62,36 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+// REDIRECTS
+
+Route::get('/2021/04/07/macro-excel-para-dibujar-en-autocad-circulos', function() {
+    return redirect()->route('blog.article.show', ['macro-excel-para-dibujar-en-autocad-circulos']);
+});
+
+Route::get('/2021/05/05/macro-excel-para-dibujar-en-autocad-hatch', function() {
+    return redirect()->route('blog.article.show', ['macro-excel-para-dibujar-en-autocad-hatch']);
+});
+
+Route::get('/2021/03/27/macro-para-iniciar-un-dibujo-en-autocad', function() {
+    return redirect()->route('blog.article.show', ['macro-para-iniciar-un-dibujo-en-autocad']);
+});
+
+Route::get('/2021/03/19/macro-para-dibujar-en-autocad-bloques', function() {
+    return redirect()->route('blog.article.show', ['macro-para-dibujar-en-autocad-bloques']);
+});
+
+Route::get('/2021/03/26/vxproject-ingenieria-estructural', function() {
+    return redirect()->route('vxproject-presentacion.show');
+});
+
+Route::get('/2021/03/26/vxproject-ingenieria-estructural', function() {
+    return redirect()->route('vxproject-presentacion.show');
+});
+
+Route::get('/2021/03/14/descargas', function() {
+    return redirect()->route('area-descargas.show');
 });
 
 require __DIR__.'/auth.php';
