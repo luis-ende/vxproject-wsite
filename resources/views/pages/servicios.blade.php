@@ -20,7 +20,9 @@
                         <p class="h-48 text-xl">
                             Encuentra información de suelos de sitios existentes en la republica mexicana para poder pre-diseñar una cimentación.
                         </p>
-                        <button type="button" class="vxproject-button-primary self-end my-2 w-40">Iniciar sesión</button>
+                        <a href="https://field.vxproject.com.mx"
+                           target="_blank"
+                           class="vxproject-button-primary self-end my-2 w-40">Iniciar sesión</a>
                         <a href="{{ route('contacto.show') . '?asunto=3#contacto_form' }}"
                            class="vxproject-button-primary self-end my-2 w-40">suscribete</a>
                     </article>
