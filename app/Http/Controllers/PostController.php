@@ -21,8 +21,13 @@ class PostController extends Controller
 
         $post_content = $this->getPostContent($post);
         $comments = $this->getPostComments($post);
+        $social_links = $this->getSocialLinks($post);
 
-        return view('pages.post', compact('post', 'post_content', 'comments'));
+        return view('pages.post', compact(
+            'post',
+            'post_content',
+            'comments',
+            'social_links'));
     }
 
     private function getPostContent(Post $post): RenderedContentInterface
@@ -68,6 +73,15 @@ class PostController extends Controller
         }
 
         return $comments;
+    }
+
+    private function getSocialLinks(Post $post) {
+        return \Share::page(route('blog.article.show', $post->slug), $post->title)
+            ->facebook()
+            ->twitter()
+            ->whatsapp()
+            ->linkedin()
+            ->getRawLinks();
     }
 
     private function getPostModelComments(Post $post): Collection

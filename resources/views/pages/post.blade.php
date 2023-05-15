@@ -13,9 +13,16 @@
                     </p>
                 </div>
             </section>
+
+            {{-- Sección de contenido--}}
             <section>
                 <article class="md:p-10 p-2">
                     @include('posts.' . $post->post_template, ['post_content', $post_content])
+
+                    {{-- Sección de enlaces redes sociales--}}
+                    <x-social-links
+                        :social_links="$social_links"
+                    />
                 </article>
             </section>
 
