@@ -17,6 +17,7 @@ class DescargasController extends Controller
         $this->seo()->opengraph()->setUrl(route('area-descargas.show'));
         $this->seo()->opengraph()->addProperty('type', 'pages');
         $this->seo()->jsonLd()->setType('Page');
+        $this->seo()->opengraph()->addImage(asset('/images/articulos/DESCARGAS-VX.jpg'), ['height' => 300, 'width' => 300]);
 
         return view('pages.descargas');
     }
