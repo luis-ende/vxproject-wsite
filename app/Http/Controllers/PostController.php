@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use Artesaos\SEOTools\Traits\SEOTools as SEOToolsTrait;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
@@ -15,9 +16,18 @@ use League\CommonMark\Output\RenderedContentInterface;
 
 class PostController extends Controller
 {
+    use SEOToolsTrait;
+
     public function blogPostShow(string $postSlug)
     {
         $post = Post::where('slug', $postSlug)->firstOrFail();
+
+        $this->seo()->setTitle($post->title . ' - VX PRoject');
+        $this->seo()->setDescription($post->resumen);
+        $this->seo()->opengraph()->setUrl(route('blog.article.show', [$post->slug]));
+        $this->seo()->opengraph()->addProperty('type', 'articles');
+        $this->seo()->jsonLd()->setType('Article');
+        $this->seo()->addImages($post->getFirstMedia('images')->original_url);
 
         $post_content = $this->getPostContent($post);
         $comments = $this->getPostComments($post);

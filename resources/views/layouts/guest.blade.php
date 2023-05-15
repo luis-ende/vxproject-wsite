@@ -14,6 +14,8 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+        {!! SEO::generate(true) !!}
     </head>
     <body class="font-sans bg-white antialiased">
         <x-page-loader />

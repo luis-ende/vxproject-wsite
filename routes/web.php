@@ -15,17 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('homepage');
+Route::get('/', [\App\Http\Controllers\HomepageController::class, 'index'])
+        ->name('homepage');
 
-Route::get('/vxproject-ingenieria-estructural', function() {
-    return view('pages.vxproject-presentacion');
-})->name('vxproject-presentacion.show');
+Route::get('/vxproject-ingenieria-estructural', [\App\Http\Controllers\PresentacionController::class, 'index'])
+        ->name('vxproject-presentacion.show');
 
-Route::get('/descargas', function() {
-    return view('pages.descargas');
-})->name('area-descargas.show');
+Route::get('/descargas', [\App\Http\Controllers\DescargasController::class, 'index'])
+        ->name('area-descargas.show');
 
 Route::get('/blog', [\App\Http\Controllers\BlogController::class, 'index'])->name('blog.show');
 
@@ -41,18 +38,16 @@ Route::post('/comments', [\App\Http\Controllers\CommentsController::class, 'stor
     ->middleware(['honey'])
     ->name('comments.store');
 
-Route::get('/servicios-ingenieria-estructural', function() {
-    return view('pages.servicios');
-})->name('servicios.show');
+Route::get('/servicios-ingenieria-estructural', [\App\Http\Controllers\ServiciosController::class, 'index'])
+    ->name('servicios.show');
 
 Route::get('/contacto', [\App\Http\Controllers\ContactoController::class, 'show'])->name('contacto.show');
 Route::post('/contacto/form', [\App\Http\Controllers\ContactoController::class, 'store'])
     ->middleware(['honey'])
     ->name('contacto.form.store');
 
-Route::get('/codigos-disenio', function () {
-    return view('pages.codigos-disenio');
-})->name('codigos-disenio.index');
+Route::get('/codigos-disenio', [\App\Http\Controllers\CodigosDisenioController::class, 'index'])
+    ->name('codigos-disenio.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
