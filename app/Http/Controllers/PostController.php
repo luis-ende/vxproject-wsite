@@ -27,7 +27,7 @@ class PostController extends Controller
         $this->seo()->opengraph()->setUrl(route('blog.article.show', [$post->slug]));
         $this->seo()->opengraph()->addProperty('type', 'articles');
         $this->seo()->jsonLd()->setType('Article');
-        $this->seo()->addImages($post->getFirstMedia('images')->original_url);
+        $this->seo()->opengraph()->addImage($post->getFirstMedia('images')->original_url, ['height' => 300, 'width' => 300]);
 
         $post_content = $this->getPostContent($post);
         $comments = $this->getPostComments($post);
