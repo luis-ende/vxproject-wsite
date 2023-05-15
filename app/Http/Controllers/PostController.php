@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use League\CommonMark\Environment\Environment;
 use League\CommonMark\Extension\Attributes\AttributesExtension;
@@ -17,14 +18,16 @@ class PostController extends Controller
     {
         $post = Post::where('slug', $postSlug)->firstOrFail();
 
-        $config = [];
-        $environment = new Environment($config);
-        $environment->addExtension(new CommonMarkCoreExtension());
-        $environment->addExtension(new AttributesExtension());
+        $post_content = Cache::rememberForever($post->post_template, function() use($post) {
+            $config = [];
+            $environment = new Environment($config);
+            $environment->addExtension(new CommonMarkCoreExtension());
+            $environment->addExtension(new AttributesExtension());
 
-        $converter = new MarkdownConverter($environment);
-        $post_content = $converter->convert(
-            file_get_contents(resource_path('views/posts/content/') . $post->post_template . '.md'));
+            $converter = new MarkdownConverter($environment);
+            return $converter->convert(
+                file_get_contents(resource_path('views/posts/content/') . $post->post_template . '.md'));
+        });
 
         Carbon::setlocale(config('app.locale'));
         $comments = [];
