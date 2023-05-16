@@ -17,7 +17,7 @@ class HomepageController extends Controller
         $this->seo()->opengraph()->setUrl(route('homepage'));
         $this->seo()->opengraph()->addProperty('type', 'articles');
         $this->seo()->jsonLd()->setType('Article');
-        $this->seo()->opengraph()->addImage(asset('images/servicios/homepage_cover.jpg'), ['height' => 300, 'width' => 300]);
+        $this->seo()->opengraph()->addImage(asset('/images/homepage_cover.jpeg'), ['height' => 100, 'width' => 100]);
 
         return view('welcome');
     }

@@ -12,9 +12,9 @@ class CodigosDisenioController extends Controller
     public function index()
     {
         $this->seo()->setTitle('Códigos de diseño');
-        $this->seo()->setDescription('En nuestra página de descargas sobre ingeniería estructural para torres de telecomunicación encontrarás diversos materiales relacionados con nuestros tutoriales en Youtube y artículos del blog.');
-        $this->seo()->metatags()->addKeyword(['torres de telecomunicación', 'ingeniería estructural', 'tutoriales', 'descargas']);
-        $this->seo()->opengraph()->setUrl(route('area-descargas.show'));
+        $this->seo()->setDescription('VX Project ofrece diseños de ingeniería con los códigos de diseño más actuales para acero y concreto, así como para la aplicación de cargas de viento y sismo de los manuales y reglamentos más recientes tanto nacionales como internacionales.');
+        $this->seo()->metatags()->addKeyword(['torres de telecomunicación', 'ingeniería estructural', 'códigos de diseño', 'viento', 'sismo', 'acero', 'tornillería y soldadura', 'cimentación']);
+        $this->seo()->opengraph()->setUrl(route('codigos-disenio.index'));
         $this->seo()->opengraph()->addProperty('type', 'pages');
         $this->seo()->jsonLd()->setType('Page');
         $this->seo()->opengraph()->addImage(asset('/images/codigos/codigos_cover.jpeg'), ['height' => 300, 'width' => 300]);
