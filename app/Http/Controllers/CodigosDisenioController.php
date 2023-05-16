@@ -17,6 +17,7 @@ class CodigosDisenioController extends Controller
         $this->seo()->opengraph()->setUrl(route('area-descargas.show'));
         $this->seo()->opengraph()->addProperty('type', 'pages');
         $this->seo()->jsonLd()->setType('Page');
+        $this->seo()->opengraph()->addImage(asset('/images/codigos/codigos_cover.jpeg'), ['height' => 300, 'width' => 300]);
 
         return view('pages.codigos-disenio');
     }

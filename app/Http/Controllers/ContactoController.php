@@ -19,6 +19,7 @@ class ContactoController extends Controller
         $this->seo()->opengraph()->setUrl(route('contacto.show'));
         $this->seo()->opengraph()->addProperty('type', 'pages');
         $this->seo()->jsonLd()->setType('Page');
+        $this->seo()->opengraph()->addImage(asset('/images/servicios/contacto_cover.jpeg'), ['height' => 300, 'width' => 300]);
 
         return view('pages.contacto');
     }

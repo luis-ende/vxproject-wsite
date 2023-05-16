@@ -17,6 +17,7 @@ class ServiciosController extends Controller
         $this->seo()->opengraph()->setUrl(route('servicios.show'));
         $this->seo()->opengraph()->addProperty('type', 'pages');
         $this->seo()->jsonLd()->setType('Page');
+        $this->seo()->opengraph()->addImage(asset('/images/servicios/VXPFIELD.jpg'), ['height' => 300, 'width' => 300]);
 
         return view('pages.servicios');
     }

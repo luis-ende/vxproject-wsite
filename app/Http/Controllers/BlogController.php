@@ -18,6 +18,7 @@ class BlogController extends Controller
         $this->seo()->opengraph()->setUrl(route('blog.show'));
         $this->seo()->opengraph()->addProperty('type', 'blog');
         $this->seo()->jsonLd()->setType('Blog');
+        $this->seo()->opengraph()->addImage(asset('/images/articulos/blog_cover.png'), ['height' => 300, 'width' => 300]);
 
         $posts = Post::all()->sortBy('secuencia');
 
