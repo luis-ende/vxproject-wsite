@@ -24,6 +24,7 @@ class PostController extends Controller
 
         $this->seo()->setTitle($post->title . ' - VX PRoject');
         $this->seo()->setDescription($post->resumen);
+        $this->seo()->setCanonical(route('blog.article.show', [$post->slug]));
         $this->seo()->opengraph()->setUrl(route('blog.article.show', [$post->slug]));
         $this->seo()->opengraph()->addProperty('type', 'articles');
         $this->seo()->jsonLd()->setType('Article');

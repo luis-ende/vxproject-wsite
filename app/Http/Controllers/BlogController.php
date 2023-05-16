@@ -14,6 +14,7 @@ class BlogController extends Controller
     {
         $this->seo()->setTitle('Blog sobre ingeniería estructural para torres de telecomunicación - VX Project');
         $this->seo()->setDescription('En nuestro blog encontrarás diversos artículos y referencias de gran utilidad acerca de ingeniería estructural para torres de telecomunicación.');
+        $this->seo()->setCanonical(route('blog.show'));
         $this->seo()->metatags()->addKeyword(['torres de telecomunicación', 'ingeniería estructural', 'blog']);
         $this->seo()->opengraph()->setUrl(route('blog.show'));
         $this->seo()->opengraph()->addProperty('type', 'blog');

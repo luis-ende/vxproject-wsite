@@ -15,6 +15,7 @@ class ContactoController extends Controller
     {
         $this->seo()->setTitle('Contacto diseño estructural para torres de telecomunicación');
         $this->seo()->setDescription('Pónte en contacto para solicitar mayor información, cotizaciones, dudas sobre diseño estructural para torres de telecomunicación en general.');
+        $this->seo()->setCanonical(route('contacto.show'));
         $this->seo()->metatags()->addKeyword(['contacto', 'informes', 'dseño estructural', 'torres de telecomunicación']);
         $this->seo()->opengraph()->setUrl(route('contacto.show'));
         $this->seo()->opengraph()->addProperty('type', 'pages');

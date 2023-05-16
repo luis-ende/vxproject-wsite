@@ -13,6 +13,7 @@ class DescargasController extends Controller
     {
         $this->seo()->setTitle('Página de descargas sobre ingeniería estructural para torres de telecomunicación - VX Project');
         $this->seo()->setDescription('En nuestra página de descargas sobre ingeniería estructural para torres de telecomunicación encontrarás diversos materiales relacionados con nuestros tutoriales en Youtube y artículos del blog.');
+        $this->seo()->setCanonical(route('area-descargas.show'));
         $this->seo()->metatags()->addKeyword(['torres de telecomunicación', 'ingeniería estructural', 'tutoriales', 'descargas']);
         $this->seo()->opengraph()->setUrl(route('area-descargas.show'));
         $this->seo()->opengraph()->addProperty('type', 'pages');

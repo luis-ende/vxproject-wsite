@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="google-site-verification" content="6QsnGBcAK6LsMQClZfUH-hjvgSsH-dUqvCOx8YvDywc">
 
-        <title>VX Project / Ingeniería estructural para torres de telecomunicación - @yield('page_title')</title>
+        <title>Ingeniería estructural para torres de telecomunicación VX Project - @yield('page_title')</title>
         <link rel="shortcut icon" href="{{ asset('images/VXCIRCULO.png') }}">
 
         <!-- Fonts -->

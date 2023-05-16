@@ -13,6 +13,7 @@ class ServiciosController extends Controller
     {
         $this->seo()->setTitle('Servicios de ingeniería estructural para torres de telecomunicación  - VX PRoject');
         $this->seo()->setDescription('Nuestros servicios de ingeniería estructural para diseño de torres de telecomunicación.');
+        $this->seo()->setCanonical(route('servicios.show'));
         $this->seo()->metatags()->addKeyword(['ingeniería estructural', 'torres de telecomunicación', 'estructuras de acero y concreto', 'códigos de diseño']);
         $this->seo()->opengraph()->setUrl(route('servicios.show'));
         $this->seo()->opengraph()->addProperty('type', 'pages');
