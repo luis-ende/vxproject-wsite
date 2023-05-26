@@ -16,7 +16,13 @@ class Post extends Model implements HasMedia
     use InteractsWithMedia;
     use HasComments;
 
-    protected $fillable = ['title', 'post_template', 'resumen', 'user_id'];
+    protected $fillable = [
+        'title',
+        'post_template',
+        'resumen',
+        'slug',
+        'user_id',
+    ];
 
     public function tags()
     {

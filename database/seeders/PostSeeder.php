@@ -14,6 +14,18 @@ class PostSeeder extends Seeder
     public function run(): void
     {
         $post = Post::create([
+            'title' => 'Descargas',
+            'resumen' => 'En este apartado podrás descargar la información que trabajamos en los videos tutoriales.',
+            'post_template' => 'descargas',
+            'slug' => 'descargas',
+            'user_id' => 1,
+            'secuencia' => 0,
+        ]);
+        $post->addMedia('public/images/articulos/DESCARGAS-VX.jpg')
+            ->preservingOriginal()
+            ->toMediaCollection('images');
+
+        $post = Post::create([
             'title' => 'Macro para dibujar en AutoCAD – Bloques',
             'resumen' => 'Crear una macro para insertar, girar y escalar un bloque ya previamente creado en su espacio de trabajo de AutoCAD es bastante fácil. ',
             'post_template' => 'macro-autocad-bloques',

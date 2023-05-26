@@ -14,7 +14,7 @@
         <div class="px-10 md:px-0 flex flex-col items-center">
             <section>
                 <div class="grid gap-10 lg:grid-cols-3">
-                    <x-blog.articulo-descargas />
+{{--                    <x-blog.articulo-descargas />--}}
                     @foreach($posts as $post)
                         <x-blog.articulo-card :post="$post" />
                     @endforeach

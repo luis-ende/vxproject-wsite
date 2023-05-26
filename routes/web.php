@@ -21,8 +21,9 @@ Route::get('/', [\App\Http\Controllers\HomepageController::class, 'index'])
 Route::get('/vxproject-ingenieria-estructural', [\App\Http\Controllers\PresentacionController::class, 'index'])
         ->name('vxproject-presentacion.show');
 
-Route::get('/descargas', [\App\Http\Controllers\DescargasController::class, 'index'])
-        ->name('area-descargas.show');
+Route::get('/descargas', function() {
+    return redirect()->route('blog.article.show', ['post_slug' => 'descargas']);
+})->name('area-descargas.show');
 
 Route::get('/blog', [\App\Http\Controllers\BlogController::class, 'index'])->name('blog.show');
 
