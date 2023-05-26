@@ -25,6 +25,10 @@ class PostController extends Controller
         $this->seo()->setTitle($post->title . ' - VX PRoject');
         $this->seo()->setDescription($post->resumen);
         $this->seo()->setCanonical(route('blog.article.show', [$post->slug]));
+        if (!empty($post->seo_keywords)) {
+            $keywords = explode(',', $post->seo_keywords);
+            $this->seo()->metatags()->addKeyword($keywords);
+        }
         $this->seo()->opengraph()->setUrl(route('blog.article.show', [$post->slug]));
         $this->seo()->opengraph()->addProperty('type', 'articles');
         $this->seo()->jsonLd()->setType('Article');

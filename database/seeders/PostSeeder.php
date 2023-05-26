@@ -18,6 +18,7 @@ class PostSeeder extends Seeder
             'resumen' => 'En este apartado podrás descargar la información que trabajamos en los videos tutoriales.',
             'post_template' => 'descargas',
             'slug' => 'descargas',
+            'seo_keywords' => 'torres de telecomunicación,ingeniería estructural,tutoriales,descargas',
             'user_id' => 1,
             'secuencia' => 0,
         ]);
@@ -30,6 +31,7 @@ class PostSeeder extends Seeder
             'resumen' => 'Crear una macro para insertar, girar y escalar un bloque ya previamente creado en su espacio de trabajo de AutoCAD es bastante fácil. ',
             'post_template' => 'macro-autocad-bloques',
             'slug' => 'macro-para-dibujar-en-autocad-bloques',
+            'seo_keywords' => 'torres de telecomunicación,ingeniería estructural,dibujo autocad,bloques',
             'user_id' => 1,
             'secuencia' => 2,
         ]);
@@ -42,6 +44,7 @@ class PostSeeder extends Seeder
             'resumen' => 'Crear una macro en Excel para llevar tus datos a AutoCAD y poder dibujarlos con un solo clic es posible. ',
             'post_template' => 'macro-iniciar-autocad',
             'slug' => 'macro-para-iniciar-un-dibujo-en-autocad',
+            'seo_keywords' => 'torres de telecomunicación,ingeniería estructural,dibujo autocad,macro excel',
             'user_id' => 1,
             'secuencia' => 4,
         ]);
@@ -54,6 +57,7 @@ class PostSeeder extends Seeder
             'resumen' => 'En esta ocasión les mostraremos como dibujar círculos a través de una macro en Excel.',
             'post_template' => 'macro-autocad-circulos',
             'slug' => 'macro-excel-para-dibujar-en-autocad-circulos',
+            'seo_keywords' => 'torres de telecomunicación,ingeniería estructural,dibujo autocad,círculos',
             'user_id' => 1,
             'secuencia' => 3,
         ]);
@@ -66,6 +70,7 @@ class PostSeeder extends Seeder
             'resumen' => 'Veremos como colocar uno o varios HATCH en nuestros proyectos de AutoCAD a través de EXCEL con la ayuda de macros.',
             'post_template' => 'macro-autocad-hatch',
             'slug' => 'macro-excel-para-dibujar-en-autocad-hatch',
+            'seo_keywords' => 'torres de telecomunicación,ingeniería estructural,dibujo autocad,hatch',
             'user_id' => 1,
             'secuencia' => 1,
         ]);

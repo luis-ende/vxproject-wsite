@@ -21,6 +21,7 @@ class Post extends Model implements HasMedia
         'post_template',
         'resumen',
         'slug',
+        'seo_keywords',
         'user_id',
     ];
 
