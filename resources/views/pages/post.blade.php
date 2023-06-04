@@ -7,9 +7,9 @@
                     <h2 class="mb-4 text-lg md:text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">{{ $post->title }}</h2>
                     <p class="font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl md:text-base border-b border-t py-2">
                         @svg('bx-user-pin', ['class' => 'w-6 h-6 inline-block mr-2'])
-                        <span class="mr-5">Arturo</span>
+                        <span class="mr-5">{{ $post_author }}</span>
                         @svg('zondicon-calendar', ['class' => 'w-5 h-5 inline-block mr-2'])
-                        Marzo 23, 2023
+                        {{ $post_date }}
                     </p>
                 </div>
             </section>

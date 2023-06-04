@@ -38,8 +38,15 @@ class PostController extends Controller
         $comments = $this->getPostComments($post);
         $social_links = $this->getSocialLinks($post);
 
+        Carbon::setlocale(config('app.locale'));
+        $post_author = 'Arturo';
+        $post_date = ucfirst(Carbon::parse($post->created_at)
+                            ->translatedFormat('F d, Y'));
+
         return view('pages.post', compact(
             'post',
+            'post_date',
+            'post_author',
             'post_content',
             'comments',
             'social_links'));
