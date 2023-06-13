@@ -7,8 +7,8 @@ return [
      * The google-fonts:fetch command will prefetch these fonts.
      */
     'fonts' => [
-        'default' => 'https://fonts.googleapis.com/css2?family=Questrial:ital,wght@0,400;0,700;1,400;1,700',
-        'montserrat' => 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700',
+        'default' => 'https://fonts.googleapis.com/css2?family=Questrial:ital,wght@0,400;0,700;1,400;1,700&display=swap',
+        'montserrat' => 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap',
     ],
 
     /*
