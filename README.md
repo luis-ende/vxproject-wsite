@@ -25,4 +25,6 @@
 - Artículos (blog) y gestión de páginas:
   - Comentarios: https://spatie.be/index.php/docs/laravel-comments/v1/introduction
   - Slugs: https://github.com/spatie/laravel-sluggable
-- 
+- Información para SEO - [artesaos/seotools](https://github.com/artesaos/seotools)
+- Antispam - [lukeraymonddowning/honey](https://github.com/lukeraymonddowning/honey)
+- Sitemap - [spatie/laravel-sitemap](https://github.com/spatie/laravel-sitemap)

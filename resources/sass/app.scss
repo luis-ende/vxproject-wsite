@@ -107,6 +107,14 @@ body.complete > *:not(#page-loader) {
     }
 }
 
+.vxfield-articulo {
+    img {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+}
+
 .blog-post-code {
     font-family: monospace;
     font-weight: bold;

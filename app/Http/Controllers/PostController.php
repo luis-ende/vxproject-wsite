@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\User;
 use Artesaos\SEOTools\Traits\SEOTools as SEOToolsTrait;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
@@ -39,7 +40,9 @@ class PostController extends Controller
         $social_links = $this->getSocialLinks($post);
 
         Carbon::setlocale(config('app.locale'));
-        $post_author = 'Arturo';
+
+        $user = User::find($post->user_id);
+        $post_author = $user?->name;
         $post_date = ucfirst(Carbon::parse($post->created_at)
                             ->translatedFormat('F d, Y'));
 

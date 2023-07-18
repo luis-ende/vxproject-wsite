@@ -23,8 +23,8 @@
                         <a href="https://field.vxproject.com.mx"
                            target="_blank"
                            class="vxproject-button-primary self-end my-2 w-40">Iniciar sesión</a>
-                        <a href="{{ route('contacto.show') . '?asunto=3#contacto_form' }}"
-                           class="vxproject-button-primary self-end my-2 w-40">suscribete</a>
+                        <a href="{{ route('blog.article.show', ['vxfield-herramienta']) }}"
+                           class="vxproject-button-primary self-end my-2 w-40">Ver más</a>
                     </article>
 
                     <article class="bg-white vxproject-border flex flex-col p-5">

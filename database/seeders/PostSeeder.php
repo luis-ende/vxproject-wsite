@@ -77,5 +77,18 @@ class PostSeeder extends Seeder
         $post->addMedia('public/images/articulos/Hatch.png')
             ->preservingOriginal()
             ->toMediaCollection('images');
+
+        $post = Post::create([
+            'title' => 'Pre diseño de cimentación de radiobase en suelo/roca - Field',
+            'resumen' => 'FIELD es una herramienta que recopila información de diseños de torres y cimentaciones de telecomunicaciones propuestos a lo largo de la república mexicana.',
+            'post_template' => 'vxfield-articulo',
+            'slug' => 'vxfield-herramienta',
+            'seo_keywords' => 'torres de telecomunicación,ingeniería estructural,herramientas,aplicación,vxfield,field,cimentaciones',
+            'user_id' => 2,
+            'secuencia' => 1,
+        ]);
+        $post->addMedia('public/images/articulos/VXPFIELD.jpg')
+             ->preservingOriginal()
+            ->toMediaCollection('images');
     }
 }
