@@ -10,6 +10,11 @@
 
 ## Ambiente de desarrollo
 
+- Laravel Sail
+  - Iniciar aplicación local: ./vendor/bin/sail up -d
+  - Detener: ./vendor/bin/sail stop
+  - Ejecutar Artisan, p.e.: ./vendor/bin/sail php artisan tinker 
+
 ### Compilación de assets
 
 - Para generar los assets desde la carpeta raíz del proyecto ejecutar: `npm run build`
@@ -28,3 +33,7 @@
 - Información para SEO - [artesaos/seotools](https://github.com/artesaos/seotools)
 - Antispam - [lukeraymonddowning/honey](https://github.com/lukeraymonddowning/honey)
 - Sitemap - [spatie/laravel-sitemap](https://github.com/spatie/laravel-sitemap)
+
+### Notas
+
+- Los artículos del blog se guardan en cache, regenerar cada vez que se haga un cambio en el contenido (archivos .md en `resources/views/posts/content`)

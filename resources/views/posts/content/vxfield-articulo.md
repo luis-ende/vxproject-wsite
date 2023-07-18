@@ -23,7 +23,7 @@ Vamos a realizar un ejemplo para conocer la información que nos brinda **FIELD*
 1. Colocamos las coordenadas, las cuales pueden ser en grados o decimales, en este caso serán en grados. 
 2. 19° 46’ 36.48’’ latitud, -99° 57’ 44.83’’ longitud, damos click en **buscar** y aparecerá un **pin** con la ubicación de nuestro sitio.
 3. Si activamos el **item** de TEMPERATURAS CFE 2008 o 2020 podremos observar la ciudad más cercana a nuestro sitio.
-4. Damos click sobre el **pin** cercano y del lado derecho aparecerá la temperatura media anual en CFE 2008 la cual es de 13.4° y para CFE 2020 la temperatura mínima diria es de 6.6°.
+4. Damos click sobre el **pin** cercano y del lado derecho aparecerá la temperatura media anual en CFE 2008 la cual es de 13.4° y para CFE 2020 la temperatura mínima diaria es de 6.6°.
 ![VXField Temperaturas](/storage/images/posts/vxfield1.png)
 5. Si activamos el **item** de TIPO DE SUELO podremos observar los pines de los sitios más cercanos a nuestro sitio.
 6. Al dar click sobre el **pin** de interés del lado derecho observaremos su información.
