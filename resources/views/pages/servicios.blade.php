@@ -41,6 +41,28 @@
                     </article>
 
                     <article class="bg-white vxproject-border flex flex-col p-5">
+                        <img src="{{ asset('images/servicios/GESTORIA.jpg') }}"
+                             alt="Gestoría para sitios de telecomunicaciones"
+                             class="my-5 w-full h-56 object-cover">
+                        <p class="h-48 text-xl">
+                            Gestoría para sitios de telecomunicaciones como son la localización y contratación, permisos de construcción y uso de suelos, contratación de servicio de energía ante CFE.
+                        </p>  
+                        <a href="{{ route('contacto.show') . '?asunto=2#contacto-opciones' }}"
+                           class="vxproject-button-primary self-end my-2 w-40">Contáctanos</a>                      
+                    </article>
+
+                    <article class="bg-white vxproject-border flex flex-col p-5">
+                        <img src="{{ asset('images/servicios/PLANO-AP.jpg') }}"
+                             alt="Gestoría para sitios de telecomunicaciones"
+                             class="my-5 w-full h-56 object-cover">
+                        <p class="h-48 text-xl">
+                            Elaboración de planos para proyectos de sitios de telecomunicaciones como: Anteproyecto, Proyecto Ejecutivo y As-Built.
+                        </p>                        
+                        <a href="{{ route('contacto.show') . '?asunto=2#contacto-opciones' }}"
+                           class="vxproject-button-primary self-end my-2 w-40">Contáctanos</a>
+                    </article>
+
+                    <article class="bg-white vxproject-border flex flex-col p-5">
                         <img src="{{ asset('images/servicios/CIM_RETENIDA.gif') }}"
                              alt="Cimentación"
                              class="my-5 w-full h-56 object-cover">

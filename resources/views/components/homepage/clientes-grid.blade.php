@@ -42,6 +42,12 @@
             actividad="telecomunicaciones"
     />
     <x-homepage.cliente-tarjeta
+            src="{{ asset('images/clientes_logos/SITES.jpg') }}"
+            alt="Logo SITES"
+            nombre="SITES"
+            actividad="telecomunicaciones"
+    />
+    <x-homepage.cliente-tarjeta
             src="{{ asset('images/clientes_logos/WESHLERCLIENTE.jpg') }}"
             alt="Logo Weshler"
             nombre="WESHLER"
@@ -67,9 +73,22 @@
             actividad="torrero"
     />
     <x-homepage.cliente-tarjeta
+            src="{{ asset('images/clientes_logos/SICTTECO.jpg') }}"
+            alt="Logo SICTTECO"
+            titulo="SICTTECO"
+            nombre="SICTTECO"
+            actividad="torrero"
+    />
+    <x-homepage.cliente-tarjeta
             src="{{ asset('images/clientes_logos/gnmcliente.jpg') }}"
             alt="Logo GNM"
             nombre="GNM"
+            actividad="llave en mano"
+    />
+    <x-homepage.cliente-tarjeta
+            src="{{ asset('images/clientes_logos/IASA.jpg') }}"
+            alt="Logo IASA"
+            nombre="IASA"
             actividad="llave en mano"
     />
 </div>
